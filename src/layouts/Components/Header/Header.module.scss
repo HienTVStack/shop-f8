@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px solid #e8ebed;
+}
+.logo,
+.body,
+.action {
+    flex: 1 1;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 38px;
+        height: 38px;
+        border-radius: 6px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+.back {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #808990;
+    margin-left: 10px;
+
+    &:hover .back-icon {
+        transition: 0.3 ease;
+        animation-duration: 1.5s;
+        animation-name: run;
+        animation-timing-function: ease;
+    }
+}
+
+.back-icon {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 4px;
+    width: 10px;
+    text-align: right;
+    font-weight: 400;
+}
+
+.back-title {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+// .body {
+// }
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.login-btn {
+    background-color: var(--primary-color) !important;
+    border-radius: 999px;
+    color: var(--white-color) !important;
+    padding: 9px 20px !important;
+    font-weight: 600 !important;
+    font-size: 1.4rem !important;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@keyframes run {
+    to {
+        padding-right: 10px;
+    }
+}

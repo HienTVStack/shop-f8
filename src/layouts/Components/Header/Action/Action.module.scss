@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+}
+.my-learn {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-right: 16px;
+    padding: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+    background-color: transparent;
+}
+.icon-notify {
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    user-select: none;
+    color: #333;
+    opacity: 0.8;
+    cursor: pointer;
+    font-size: 1.8rem;
+}
+
+img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 12px;
+    object-fit: cover;
+}

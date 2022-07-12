@@ -1,0 +1,22 @@
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-width: 100px;
+    padding: 9px 16px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-decoration: none;
+    user-select: none;
+    outline: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+    cursor: pointer;
+
+    &.disabled {
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}

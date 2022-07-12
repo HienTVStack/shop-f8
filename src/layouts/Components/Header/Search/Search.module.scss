@@ -1,0 +1,124 @@
+.wrapper {
+    width: 420px;
+    height: 36px;
+    padding: 0 16px 0 8px;
+    border: 2px solid #e8e8e8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:focus-within {
+        border-color: #444;
+    }
+}
+
+input {
+    flex: 1 1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    height: 100%;
+    padding: 0 4px;
+}
+
+.icon-search,
+.icon-clear {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #7c7c7c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-search {
+    opacity: 0.7;
+    padding: 0 5px;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.icon-clear {
+    cursor: pointer;
+}
+
+// search result
+.search-result {
+    min-width: 230px;
+    width: 420px;
+    min-height: 50px;
+    max-height: calc(90vh - 66px);
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 12px 24px;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+    color: #1d2129;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 6px 0 0;
+    color: #0000008a;
+}
+.header-icon {
+    font-size: 1.4rem;
+    margin-right: 8px;
+}
+.header-title {
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+// .body {
+// }
+.body-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 24px 0 12px;
+    margin-bottom: 6px;
+}
+.body-heading {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #333333;
+    text-transform: uppercase;
+}
+.body-link {
+    font-size: 1.4rem;
+    color: #0000008a;
+}
+
+// .list {
+// }
+.item {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    h4 {
+        display: inline-block;
+        font-weight: 300;
+        word-wrap: break-word;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #292929;
+        font-size: 1.4rem;
+        line-height: 1.6;
+        overflow: hidden;
+        margin-left: 12px;
+    }
+}
